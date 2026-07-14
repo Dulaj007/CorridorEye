@@ -1,0 +1,14 @@
+-- Seed data reference for CorridorEye.
+--
+-- This file documents the three demo accounts the project ships with.
+-- The actual INSERT statements are NOT run from this file, because the
+-- password_hash column must contain a bcrypt hash, and bcrypt hashing
+-- needs to run in JavaScript (bcryptjs), not plain SQL. The real seeding
+-- happens in scripts/db-setup.ts, which hashes these passwords with
+-- bcryptjs and inserts the rows.
+--
+-- username | password  | role
+-- ---------|-----------|--------
+-- admin1   | admin123  | system
+-- veh1     | veh123    | vehicle
+-- veh2     | veh123    | vehicle
